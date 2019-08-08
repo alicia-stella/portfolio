@@ -1,0 +1,561 @@
+
+/* Corps */
+
+body 
+{
+	font-family: 'Montserrat';
+	overflow-x: hidden;
+	position: static;
+	z-index: 2;
+}
+
+/* Navigation */
+
+/* Chrome, Safari */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 2px;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: #7FFFD4;
+}
+
+.navbar
+{
+	visibility: hidden;
+}
+
+.menu
+{
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	top:0;
+	z-index: 3;
+}
+
+.nav
+{
+	margin-left: 50px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+.nav-link
+{
+	color: #A9A9A9;
+}
+
+.nav-link:hover
+{
+	color: #A9A9A9;
+}
+
+li{display:inline-block;min-width:50px;}
+li a {
+	text-decoration:none;
+	line-height: 30px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+li a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+	width: 90%;
+	background: #7FFFD4;
+}
+
+/* Bannière */
+
+#title
+{
+	color: #838383;
+	text-align: center;
+	letter-spacing: 0.05em;
+	background: url("img/marbre.png") no-repeat center;
+	background-size: cover;
+	min-height: calc(100vh - 79px);
+}
+
+.img-responsive
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	max-width: 100%;
+}
+
+#sstitle
+{
+	position: relative;
+	font-size: 2vw;
+}
+
+
+/* Scroll down */
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+section 
+{
+	position: relative;
+}
+section::after 
+{
+	position: absolute;
+}
+
+.demo a 
+{
+	position: absolute;
+	bottom: 0;
+	left: 37.5%;
+	z-index: 1;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: #7FFFD4;
+	font : normal 400 20px/1 'Montserrat', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+}
+
+.demo a:hover 
+{
+	opacity: .7;
+}
+
+
+#section10 a 
+{
+	padding-top: 60px;
+}
+
+#section10 a span 
+{
+	position: absolute;
+	top: 0;
+	left: 45%;
+	width: 30px;
+	height: 50px;
+	border: 2px solid #7FFFD4;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+
+#section10 a span::before 
+{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #7FFFD4;
+	border-radius: 100%;
+	-webkit-animation: sdb10 2s infinite;
+	animation: sdb10 2s infinite;
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 
+{
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes sdb10 
+{
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Portfolio */
+
+a.thumbnail img 
+{
+	width: 100%;
+}
+
+/* Overlay */
+
+.overlay-image .hover 
+{
+	position: absolute;
+	top: 0px;
+	color: white;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+/* Apparition overlay sur passage souris */
+
+.overlay-image:hover .hover 
+{
+	opacity: 1; 
+	background-color: rgba(127,255,212,0.8);
+	width: 350px;
+	height: 233px; 
+	z-index: 0;
+}
+
+.overlay-image1 .hover 
+{
+	position: absolute;
+	top: 0px;
+	color: white;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.overlay-image1:hover .hover
+{
+	opacity: 1; 
+	background-color: rgba(127,255,212,0.8);
+	width: 350px;
+	height: 258px; 
+}
+
+.text
+{
+	margin-top: 100px;
+	font-weight: bold;
+}
+
+/* Section A propos */
+
+.row 
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.img-responsive2
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+h4
+{
+	color: #808080;
+}
+
+.ux
+{
+	display: block;
+	margin-right: 125px;
+	color: #808080;
+	text-align: justify;
+	font-size: 0.9em;
+}
+
+.alicia, .tags, .polyvalente
+{
+	font-weight: bold;
+	color: #7FFFD4;
+}
+
+.fas fa-file-code
+{
+	width: 50px;
+	height: 50px;
+}
+
+.skills
+{
+	display: inline;
+	text-align: center;
+}
+
+
+/* hoobies */
+
+.thumbnail1 img
+
+{
+	width: 100%;
+}
+
+.photographie
+{
+	position: absolute;
+	z-index: 2;
+	top: 175px;
+	right: 110px;
+	color: white;
+	font-style: 'Montserrat';
+	text-decoration: none;
+}
+
+.art
+{
+	position: absolute;
+	z-index: 2;
+	top: 175px;
+	right: 160px;
+	color: white;
+	font-style: 'Montserrat';
+	text-decoration: none;
+}
+
+.musique
+{
+	position: absolute;
+	z-index: 2;
+	top: 175px;
+	right: 130px;
+	color: white;
+	font-style: 'Montserrat';
+	text-decoration: none;
+}
+
+.yoga
+{
+	position: absolute;
+	z-index: 2;
+	top: 175px;
+	right: 150px;
+	color: white;
+	font-style: 'Montserrat';
+	text-decoration: none;
+}
+
+
+/* Footer */
+
+h5
+{
+	font-size: 0.9em;
+	text-align: center;
+}
+
+footer, .btn, .form-control
+{
+	max-width: 100%;
+	background-color: #F5F5F5;
+	opacity: 0.8;
+}
+
+.btn, .form-control
+{
+	display : flex;
+	border-radius: 10px;
+	box-shadow: 1px 2px 2px 2px #7FFFD4; 
+	color: #808080;
+}
+
+
+.btn:hover
+{
+	background-color: #7FFFD4;
+}
+
+.img1
+{
+	width: 40px;
+	height: 40px;
+}
+
+i
+{
+	color: #7FFFD4;	
+}
+
+h5
+{
+	padding-top: 230px;
+}
+
+.droit
+{
+
+	text-align: center;
+	font-size: 0.8em;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-device-width:480px)
+{
+
+	/* Responsive Nav */
+
+	.navbar
+	{
+		visibility: visible;
+	}
+
+	.body
+	{
+		position: static;
+		z-index: 2;
+	}
+
+	.bg-dark 
+	{
+		background-color:white!important;
+		width: 100vh;
+		position: fixed;
+		z-index: 3;
+	}
+
+	.navbar-dark .navbar-toggler
+	{
+		border-color: #7fffd4;
+		background-color: #7fffd4;
+	}
+
+	.navbar-dark .navbar-nav .nav-link 
+	{
+		color: #808080;
+		font-size: 0.8em;
+	}
+
+	::-webkit-scrollbar 
+	{
+		width: 5px;
+		height: 2px;
+	}
+
+	.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover 
+	{
+		color: #7fffd4;
+	}
+
+	.nav-link
+	{
+		margin-right: 200px;
+	}
+
+	.nav
+	{
+		display: none;
+	}
+
+
+	/* Responsive bannière */
+
+	#sstitle
+	{
+		font-size: 3vw;
+	}
+
+
+	/* Responsive Scroll down */
+
+.demo a 
+	{
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		z-index: 1;
+		display: inline;
+		font : normal 400 14px 'Montserrat', sans-serif;
+	}
+
+
+	/* Responsive Section */
+
+	aside
+	{
+		display: flex;
+		display: inline;
+		text-align: justify;
+		margin-top: 35px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	h4 
+	{
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 1em;
+	}
+
+	.ux
+	{
+		font-size: 0.8em;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	i
+	{
+		padding-top: 20px;
+	}
+
+	/* Responsive Footer */
+
+	h5
+	{
+		padding-top: 10px;
+		margin-bottom: -50px;
+	}
+
+	.droit
+	{
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0px;
+		font-size: 0.6em;
+	}
+
+	.btn, .form-control
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100vh;
+		font-size: 0.8em;
+	}	
+
+}
