@@ -5,6 +5,7 @@ body
 {
 	font-family: 'Montserrat';
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 	position: static;
 	z-index: 2;
 }
