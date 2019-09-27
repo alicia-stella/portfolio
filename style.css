@@ -219,6 +219,11 @@ a.thumbnail img
 
 /* Overlay */
 
+.overlay-image
+{	
+	margin-bottom: 40px;
+}
+
 .overlay-image .hover 
 {
 	position: absolute;
@@ -237,8 +242,8 @@ a.thumbnail img
 {
 	opacity: 1; 
 	background-color: rgba(127,255,212,0.8);
-	width: 350px;
-	height: 233px; 
+	width: calc(100% - 30px);
+	height: calc(100% - 40px); 
 	z-index: 0;
 }
 
@@ -258,14 +263,21 @@ a.thumbnail img
 {
 	opacity: 1; 
 	background-color: rgba(127,255,212,0.8);
-	width: 350px;
-	height: 258px; 
+	width: calc(100% - 30px);
+	height: calc(100% - 40px);
 }
 
 .text
 {
-	margin-top: 100px;
+	margin-top: 40px;
 	font-weight: bold;
+}
+
+.texte
+{
+	font-size: 0.8em;
+	color: #808080;
+	font-style: oblique;
 }
 
 /* Section A propos */
@@ -330,7 +342,7 @@ h4
 {
 	position: absolute;
 	z-index: 2;
-	top: 175px;
+	top: 195px;
 	right: 110px;
 	color: white;
 	font-style: 'Montserrat';
@@ -341,7 +353,7 @@ h4
 {
 	position: absolute;
 	z-index: 2;
-	top: 175px;
+	top: 195px;
 	right: 160px;
 	color: white;
 	font-style: 'Montserrat';
@@ -352,7 +364,7 @@ h4
 {
 	position: absolute;
 	z-index: 2;
-	top: 175px;
+	top: 195px;
 	right: 130px;
 	color: white;
 	font-style: 'Montserrat';
@@ -363,7 +375,7 @@ h4
 {
 	position: absolute;
 	z-index: 2;
-	top: 175px;
+	top: 195px;
 	right: 150px;
 	color: white;
 	font-style: 'Montserrat';
@@ -424,7 +436,18 @@ h5
 }
 
 /* RESPONSIVE */
+@media only screen and (min-device-width:576px) and (max-device-width:768px)
+{
+	.text
+	{
+		margin-top: 0;
+	}
 
+	.overlay-image1:hover .hover
+	{
+		height: calc(100%);
+	}
+}
 @media only screen and (max-device-width:480px)
 {
 
